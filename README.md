@@ -1,2 +1,2 @@
 # NDVI-dimist
-Thesis project for the master's degree in applied data science at Utrecht university
+Demystifying normalized difference vegetation index for greenness exposure assessment and policy interventions in green cities
