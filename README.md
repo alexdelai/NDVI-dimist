@@ -16,15 +16,56 @@ Technology:
 6. Running time: approximately 25 minutes
 
 Data processing:
+
 Data processing was designed as the first script of the project and to be executed in a single command. The script's name is XXX. 
 1. Read satellite images
-NDVI                Greenspace                 
-3. Perform focal statistics
-4. Write output layers
-5. Generate random point locations
-6. Extract raster values into a data frame
+NDVI / Greenspace / Tree Canopy / Forbs and Shrubs / Grass input maps visualizations
+2. Perform focal statistics
+Assessed greenness exposure by averaging NDVI, greenspace, and vegetation values at 100, 300, and 500 meter buffer distances using focal statistics. The filters convolved over the input images were square-shaped and sized 21, 61, and 101 pixels, respectively.
+3. Write output layers
+NDVI / Greenspace / Tree Canopy / Forbs and Shrubs / Grass output layers visualizations
+4. Generate random point locations
+Performed data reduction randomly filtering 10,000 locations 100 and 300 meters apart and 5,000 points 500 meters away from each other to obtain a complete data representation of the area of interest.
+5. Extract raster values into a data frame
+Sampled output layers at randomly generated locations to extract greenness exposure values. The obtained datasets look as follows:
+Data frame 100 / Data frame 300 / Data frame 500
+
+Exploratory data analysis:
+
+Next, we conducted an exploratory data analysis using the script XXX, where we mainly obtained: 
+1. Descriptive statistics of the greenness variables 
+2. Data distributions in form of histograms 
+3. Linear regression models
+
+[Introduce some EDA visualizations]
 
 Modelling:
-1. Multivaraite modelling
-2. Univaraite modelling
+1. Generalized Additive Models exploration
 
+The script XXX was used to get a better understanding of GAMs and includes:
+
+1.1. What are GAMs
+
+1.2. What parameters do those models include (distribution, link function, functional form, lambda, and splines)
+
+1.3. How to perdorm model tuning (GCV, Effective DoF, AIC, Pseudo R-Squared, and grid search)
+
+2. Multivariate modelling
+
+The script XXX was used to explain NDVI using tree canopy, forbs and shrubs, and grass as predictors at 100, 300, and 500 m buffer sizes.
+
+[Include multivariate partial dependence plots]
+
+3. Univariate modelling
+
+The script XXX was used to explain greenspace, tree canopy, forbs and shrubs, and grass using NDVI as a predictor at 100, 300, and 500 m spatial scales.
+
+[Include univariate partial dependence plots]
+
+The final structure of the repo and order of scripts should be as follows:
+1. Readme
+2. data_processing_ndvi
+3. exploratory_data_analysis_ndvi
+4. exploratory_gam_analysis_ndvi
+5. multivariate_modelling_ndvi
+6. univariate_modelling_ndvi
