@@ -55,7 +55,7 @@ The script XXX was used to get a better understanding of GAMs and includes:
 
 1.2. What parameters do those models include (distribution, link function, functional form, lambda, and splines)
 
-1.3. How to perdorm model tuning (GCV, Effective DoF, AIC, Pseudo R-Squared, and grid search)
+1.3. How to perform model tuning (GCV, Effective DoF, AIC, Pseudo R-Squared, and grid search)
 
 ### 2. Multivariate modelling
 
