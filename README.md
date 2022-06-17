@@ -31,7 +31,7 @@ From top to down, NDVI and Forbs and Shrubs. And from left to right, input map, 
 ### 4. Generate random point locations
 Performed data reduction randomly filtering 10,000 locations 100 and 300 meters apart and 5,000 points 500 meters away from each other to obtain a complete data representation of the area of interest.
 ### 5. Extract raster values into a data frame
-Sampled output layers at randomly generated locations to extract greenness exposure values. The obtained datasets should look as follows:
+Sampled output layers at randomly generated locations to extract greenness exposure values. The obtained datasets should be as follows:
 
 <img src="/df_ndvi_100.png" width="700" height="200">
 <img src="/df_ndvi_300.png" width="700" height="200">
@@ -59,14 +59,13 @@ The script XXX was used to get a better understanding of GAMs and includes:
 
 ### 2. Multivariate modelling
 
-The script XXX was used to model NDVI using tree canopy, forbs and shrubs, and grass as predictors at 100, 300, and 500 m buffer sizes:
+The script XXX was used to model NDVI using tree canopy, forbs and shrubs, and grass as predictors at 100, 300, and 500 m buffer sizes. The multivariate model explaining NDVI at an exposure of 100 meters should look like the following plot:
 
-<img src="/gam_ndvi_100_best_plot.png" width="500" height="160"><img src="/gam_ndvi_300_best_plot.png" width="500" height="160">
-<img src="/gam_ndvi_500_best_plot.png" width="500" height="160">
+![](/gam_ndvi_100_best_plot.png)
 
 ### 3. Univariate modelling
 
-The script XXX was used to model greenspace, tree canopy, forbs and shrubs, and grass using NDVI as a predictor at 100, 300, and 500 m spatial scales. Univariate models at 100 meters should look as follows:
+The script XXX was used to model greenspace, tree canopy, forbs and shrubs, and grass using NDVI as a predictor at 100, 300, and 500 m spatial scales. Univariate models at 100 meters should be as follows:
 
 <img src="/gam_greenspace_100_best_plot.png" width="500" height="400"><img src="/gam_canopy_100_best_plot.png" width="500" height="400">
 <img src="/gam_shrubs_100_best_plot.png" width="500" height="400"><img src="/gam_grass_100_best_plot.png" width="500" height="400">
