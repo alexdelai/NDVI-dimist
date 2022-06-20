@@ -23,7 +23,7 @@ The 5 steps process starts by reading greenness remote-sensed satellite images (
 
 <img src="/visualizations_ndvi/ndvi_input_map.png" width="200" height="160"><img src="/visualizations_ndvi/greenspace_input_map.png" width="200" height="160"><img src="/visualizations_ndvi/canopy_input_map.png" width="200" height="160"><img src="/visualizations_ndvi/shrubs_input_map.png" width="200" height="160"><img src="/visualizations_ndvi/grass_input_map.png" width="200" height="160">
 ### 2. Perform focal statistics
-Then, focal statistics was performed. Assessed greenness exposure by averaging NDVI, greenspace, and vegetation values at 100, 300, and 500 meter buffer distances using focal statistics. The filters convolved over the input images were square-shaped and sized 21, 61, and 101 pixels, respectively.
+Then, we assessed greenness exposure by averaging NDVI, greenspace, and vegetation values at 100, 300, and 500-meter buffer distances using focal statistics. The filters convolved over the input images were square-shaped and sized 21, 61, and 101 pixels, respectively.
 ### 3. Write output layers
 In step number 3, we create output layers for greenness exposure at different spatial scales. From top to down, NDVI and Forbs and Shrubs. And from left to right, input map, 100, 300, and 500 meters greenness exposure:
 
@@ -31,7 +31,7 @@ In step number 3, we create output layers for greenness exposure at different sp
 
 <img src="/visualizations_ndvi/shrubs_input_map.png" width="250" height="200"><img src="/visualizations_ndvi/shrubs_output_layer_100.png" width="250" height="200"><img src="/visualizations_ndvi/shrubs_output_layer_300.png" width="250" height="200"><img src="/visualizations_ndvi/shrubs_output_layer_500.png" width="250" height="200">
 ### 4. Generate random point locations
-Then, we performed data reduction randomly filtering locations for 100, 300, and 500 meters buffer distance ensuring a complete data representation of the area of interest.
+Then, we performed data reduction by randomly filtering locations for 100, 300, and 500 meters buffer distance ensuring a complete data representation of the area of interest.
 ### 5. Extract raster values into a data frame
 Finally, we sampled output layers at randomly generated locations to extract greenness exposure values. For instance, greenness metrics at 100 meters data frame should be as follows:
 
@@ -41,14 +41,14 @@ Finally, we sampled output layers at randomly generated locations to extract gre
 
 Next, we conducted an exploratory data analysis using the script **2_exploratory_data_analysis_ndvi.ipynb**, where we mainly obtained: 
 1. Descriptive statistics of the greenness variables 
-2. Data distributions in form of histograms 
+2. Data distributions (i.e. histograms) 
 3. Linear regression models
 
 <img src="/visualizations_ndvi/density_ndvi_100_plot.png" width="200" height="200"><img src="/visualizations_ndvi/density_green_100_plot.png" width="200" height="200"><img src="/visualizations_ndvi/density_canopy_100_plot.png" width="200" height="200"><img src="/visualizations_ndvi/density_shrubs_100_plot.png" width="200" height="200"><img src="/visualizations_ndvi/density_grass_100_plot.png" width="200" height="200">
 
 ## Exploratory GAMs analysis
 
-Following the methodology, run **3_exploratory_gam_analysis_ndvi.ipynb** to get a better understanding of GAMs and includes:
+Following the methodology, run **3_exploratory_gam_analysis_ndvi.ipynb** to get a better understanding of GAMs and including:
 
 1.1. What are Generalized Additive Models (GAMs)
 
