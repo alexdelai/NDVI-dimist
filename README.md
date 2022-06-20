@@ -16,29 +16,30 @@ A large volume of nature and health research mainly uses normalized difference v
 
 ## Data processing
 
-Data processing was designed as the first script of the project and to be executed in a single command. The script's name is XXX. 
+First, run **1_data_processing_ndvi.ipynb** to perform the required data processing in a single execution.
+
 ### 1. Read satellite images
-From left to right, NDVI, Greenspace, Tree Canopy, Forbs and Shrubs, and Grass:
+The 5 steps process starts by reading greenness remote-sensed satellite images (i.e. input maps). From left to right, NDVI, Greenspace, Tree Canopy, Forbs and Shrubs, and Grass:
 
 <img src="/visualizations_ndvi/ndvi_input_map.png" width="200" height="160"><img src="/visualizations_ndvi/greenspace_input_map.png" width="200" height="160"><img src="/visualizations_ndvi/canopy_input_map.png" width="200" height="160"><img src="/visualizations_ndvi/shrubs_input_map.png" width="200" height="160"><img src="/visualizations_ndvi/grass_input_map.png" width="200" height="160">
 ### 2. Perform focal statistics
-Assessed greenness exposure by averaging NDVI, greenspace, and vegetation values at 100, 300, and 500 meter buffer distances using focal statistics. The filters convolved over the input images were square-shaped and sized 21, 61, and 101 pixels, respectively.
+Then, focal statistics was performed. Assessed greenness exposure by averaging NDVI, greenspace, and vegetation values at 100, 300, and 500 meter buffer distances using focal statistics. The filters convolved over the input images were square-shaped and sized 21, 61, and 101 pixels, respectively.
 ### 3. Write output layers
-From top to down, NDVI and Forbs and Shrubs. And from left to right, input map, 100, 300, and 500 meters greenness exposure:
+In step number 3, we create output layers for greenness exposure at different spatial scales. From top to down, NDVI and Forbs and Shrubs. And from left to right, input map, 100, 300, and 500 meters greenness exposure:
 
 <img src="/visualizations_ndvi/ndvi_input_map.png" width="250" height="200"><img src="/visualizations_ndvi/ndvi_output_layer_100.png" width="250" height="200"><img src="/visualizations_ndvi/ndvi_output_layer_300.png" width="250" height="200"><img src="/visualizations_ndvi/ndvi_output_layer_300.png" width="250" height="200">
 
 <img src="/visualizations_ndvi/shrubs_input_map.png" width="250" height="200"><img src="/visualizations_ndvi/shrubs_output_layer_100.png" width="250" height="200"><img src="/visualizations_ndvi/shrubs_output_layer_300.png" width="250" height="200"><img src="/visualizations_ndvi/shrubs_output_layer_500.png" width="250" height="200">
 ### 4. Generate random point locations
-Performed data reduction randomly filtering 10,000 locations 100 and 300 meters apart and 5,000 points 500 meters away from each other to obtain a complete data representation of the area of interest.
+Then, we performed data reduction randomly filtering locations for 100, 300, and 500 meters buffer distance ensuring a complete data representation of the area of interest.
 ### 5. Extract raster values into a data frame
-Sampled output layers at randomly generated locations to extract greenness exposure values. For instance, greenness metrics at 100 meters data frame should be as follows:
+Finally, we sampled output layers at randomly generated locations to extract greenness exposure values. For instance, greenness metrics at 100 meters data frame should be as follows:
 
 ![](/visualizations_ndvi/df_ndvi_100.png)
 
 ## Exploratory data analysis
 
-Next, we conducted an exploratory data analysis using the script XXX, where we mainly obtained: 
+Next, we conducted an exploratory data analysis using the script **2_exploratory_data_analysis_ndvi.ipynb**, where we mainly obtained: 
 1. Descriptive statistics of the greenness variables 
 2. Data distributions in form of histograms 
 3. Linear regression models
@@ -47,7 +48,7 @@ Next, we conducted an exploratory data analysis using the script XXX, where we m
 
 ## Exploratory GAMs analysis
 
-The script XXX was used to get a better understanding of GAMs and includes:
+Following the methodology, run **3_exploratory_gam_analysis_ndvi.ipynb** to get a better understanding of GAMs and includes:
 
 1.1. What are Generalized Additive Models (GAMs)
 
@@ -59,13 +60,13 @@ The script XXX was used to get a better understanding of GAMs and includes:
 
 ## Multivariate modelling
 
-The script XXX was used to model NDVI using tree canopy, forbs and shrubs, and grass as predictors at 100, 300, and 500 m buffer sizes. The multivariate model explaining NDVI at an exposure of 100 meters should look like the following plot:
+Execute the script **4_multivariate_modelling_ndvi.ipynb** to model NDVI using tree canopy, forbs and shrubs, and grass as predictors at 100, 300, and 500 m buffer sizes. The multivariate model explaining NDVI at an exposure of 100 meters should look like the following plot:
 
 ![](/visualizations_ndvi/gam_ndvi_100_best_plot.bmp)
 
 ## Univariate modelling
 
-The script XXX was used to model greenspace, tree canopy, forbs and shrubs, and grass using NDVI as a predictor at 100, 300, and 500 m spatial scales. Univariate models at 100 meters should be as follows:
+Finally, run **5_univariate_modelling_ndvi.ipynb** to model greenspace, tree canopy, forbs and shrubs, and grass using NDVI as a predictor at 100, 300, and 500 m spatial scales. Univariate models at 100 meters should be as follows:
 
 <img src="/visualizations_ndvi/gam_greenspace_100_best_plot.png" width="300" height="250"><img src="/visualizations_ndvi/gam_canopy_100_best_plot.png" width="300" height="250">
 <img src="/visualizations_ndvi/gam_shrubs_100_best_plot.png" width="300" height="250"><img src="/visualizations_ndvi/gam_grass_100_best_plot.png" width="300" height="250">
