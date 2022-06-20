@@ -61,7 +61,7 @@ The script XXX was used to get a better understanding of GAMs and includes:
 
 The script XXX was used to model NDVI using tree canopy, forbs and shrubs, and grass as predictors at 100, 300, and 500 m buffer sizes. The multivariate model explaining NDVI at an exposure of 100 meters should look like the following plot:
 
-![](/visualizations_ndvi/gam_ndvi_100_best_plot.png)
+![](/visualizations_ndvi/gam_ndvi_100_best_plot.bmp)
 
 ## Univariate modelling
 
