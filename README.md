@@ -22,17 +22,17 @@ First, run **1_data_processing_ndvi.ipynb** to perform the required data process
 The 5 steps process starts by reading greenness remote-sensed satellite images (i.e. input maps). From left to right, NDVI, Greenspace, Tree Canopy, Forbs and Shrubs, and Grass:
 
 <img src="/visualizations_ndvi/ndvi_input_map.png" width="200" height="160"><img src="/visualizations_ndvi/greenspace_input_map.png" width="200" height="160"><img src="/visualizations_ndvi/canopy_input_map.png" width="200" height="160"><img src="/visualizations_ndvi/shrubs_input_map.png" width="200" height="160"><img src="/visualizations_ndvi/grass_input_map.png" width="200" height="160">
-### 2. Perform focal statistics
+### 2. Run focal statistics
 Then, we assessed greenness exposure by averaging NDVI, greenspace, and vegetation values at 100, 300, and 500-meter buffer distances using focal statistics. The filters convolved over the input images were square-shaped and sized 21, 61, and 101 pixels, respectively.
-### 3. Write output layers
-In step number 3, we create output layers for greenness exposure at different spatial scales. From top to down, NDVI and Forbs and Shrubs. And from left to right, input map, 100, 300, and 500 meters greenness exposure:
+### 3. Develop exposure maps/ layers
+In step number 3, we create output layers (e.g. exposure maps) for greenness exposure at different spatial scales. From top to down, NDVI and Forbs and Shrubs. And from left to right, input map, 100, 300, and 500 meters greenness exposure:
 
 <img src="/visualizations_ndvi/ndvi_input_map.png" width="250" height="200"><img src="/visualizations_ndvi/ndvi_output_layer_100.png" width="250" height="200"><img src="/visualizations_ndvi/ndvi_output_layer_300.png" width="250" height="200"><img src="/visualizations_ndvi/ndvi_output_layer_300.png" width="250" height="200">
 
 <img src="/visualizations_ndvi/shrubs_input_map.png" width="250" height="200"><img src="/visualizations_ndvi/shrubs_output_layer_100.png" width="250" height="200"><img src="/visualizations_ndvi/shrubs_output_layer_300.png" width="250" height="200"><img src="/visualizations_ndvi/shrubs_output_layer_500.png" width="250" height="200">
-### 4. Generate random point locations
+### 4. Sample random locations within the case study area
 Then, we performed data reduction by randomly filtering locations for 100, 300, and 500 meters buffer distance ensuring a complete data representation of the area of interest.
-### 5. Extract raster values into a data frame
+### 5. Extract raster values
 Finally, we sampled output layers at randomly generated locations to extract greenness exposure values. For instance, greenness metrics at 100 meters data frame should be as follows:
 
 ![](/visualizations_ndvi/df_ndvi_100.png)
