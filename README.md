@@ -1,4 +1,4 @@
-# Demystifying normalized difference vegetation index (NDVI) for greenness exposure assessment and policy interventions in urban greening
+# Demystifying normalized difference vegetation index (NDVI) for greenness exposure assessment and policy intervention in urban greening
 
 ## Acknowledgements
 Thesis project was made in collaboration with S.M. Labib from the Department of Human Geography and Spatial Planning at Utrecht University.
