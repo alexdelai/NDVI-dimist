@@ -4,7 +4,7 @@
 Thesis project was made in collaboration with S.M. Labib from the Department of Human Geography and Spatial Planning at Utrecht University.
 
 ## Aims and objectives
-A large volume of nature and health research mainly uses normalized difference vegetation index (NDVI) for measuring greenness exposure. However, little is known about what NDVI measures in terms of vegetation types (e.g., grass, canopy coverage) within certain analysis zones (e.g., 500m buffer). Additionally, little is explored on how changes in NDVI (e.g., 0.1 increments) should be interpreted for policy intervention of urban greening. Therefore, this study aims to demystify NDVI by first investigating the sensitivity of NDVI values in relation to vegetation types and second by exploring how specific value increments of NDVI reflect changes in vegetation types and percent of green spaces.
+A large majority of nature and health research uses the normalized difference vegetation index (NDVI) for measuring greenness exposure. However, little is known about what NDVI measures in terms of vegetation types (e.g., grass, canopy coverage) within certain analysis zones (e.g., 500m buffer). Additionally, more exploration is needed to understand how changes in NDVI (e.g., per 0.1 increments) should be interpreted for policy intervention in urban greening. This study aims to address such gaps in the literature.
 
 ## Technology
 - Programming Language: used Python v3.9.10
