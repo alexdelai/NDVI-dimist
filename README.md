@@ -60,13 +60,13 @@ Following the methodology, run **3_exploratory_gam_analysis_ndvi.ipynb** to get 
 
 ## Multivariate analysis
 
-Execute the script **4_multivariate_modelling_ndvi.ipynb** to explore the sensitivity of NDVI to vegetation types and amounts of vegetation for different buffer zones in a multivariate model. The multivariate model explaining NDVI for a buffer distance of 100 meters should be as follows:
+Execute the script **4_multivariate_analysis_ndvi.ipynb** to explore the sensitivity of NDVI to vegetation types and amounts of vegetation for different buffer zones in a multivariate model. The multivariate model explaining NDVI for a buffer distance of 100 meters should be as follows:
 
 ![](/visualizations_ndvi/gam_ndvi_100_best_plot.bmp)
 
 ## Univariate analysis
 
-Finally, run **5_univariate_modelling_ndvi.ipynb** to explore the sensitivity of vegetation types and amounts of vegetation to increments in mean NDVI for different bufffer zones in a univariate model. Univariate models for a buffer distance of 100 meters should be as follows:
+Finally, run **5_univariate_analysis_ndvi.ipynb** to explore the sensitivity of vegetation types and amounts of vegetation to increments in mean NDVI for different bufffer zones in a univariate model. Univariate models for a buffer distance of 100 meters should be as follows:
 
 <img src="/visualizations_ndvi/gam_greenspace_100_best_plot.bmp" width="300" height="250"><img src="/visualizations_ndvi/gam_canopy_100_best_plot.bmp" width="300" height="250">
 <img src="/visualizations_ndvi/gam_shrubs_100_best_plot.bmp" width="300" height="250"><img src="/visualizations_ndvi/gam_grass_100_best_plot.bmp" width="300" height="250">
