@@ -30,7 +30,7 @@ Here, we created greenness exposure maps (i.e. output layers) for different buff
 <img src="/visualizations_ndvi/ndvi_input_map.png" width="250" height="200"><img src="/visualizations_ndvi/ndvi_output_layer_100.png" width="250" height="200"><img src="/visualizations_ndvi/ndvi_output_layer_300.png" width="250" height="200"><img src="/visualizations_ndvi/ndvi_output_layer_300.png" width="250" height="200">
 
 <img src="/visualizations_ndvi/shrubs_input_map.png" width="250" height="200"><img src="/visualizations_ndvi/shrubs_output_layer_100.png" width="250" height="200"><img src="/visualizations_ndvi/shrubs_output_layer_300.png" width="250" height="200"><img src="/visualizations_ndvi/shrubs_output_layer_500.png" width="250" height="200">
-### 4. Step 4: random location samplnig within the study area
+### 4. Step 4: random location sampling within the study area
 Then, we performed data reduction by randomly sampling locations within the Greater Manchester boudaries for 100, 300, and 500 meters buffer distance ensuring the data representation of the study area.
 ### 5. Step 5: extraction of raster values
 Finally, we sampled greenness exposure maps at the randomly generated locations to extract raster or cell values and stored them into three different dataframes (one per buffer zone). For instance, greenness metrics at 100 meters data frame should be as follows:
