@@ -68,8 +68,8 @@ Execute the script **4_multivariate_modelling_ndvi.ipynb** to explore the sensit
 
 Finally, run **5_univariate_modelling_ndvi.ipynb** to explore the sensitivity of vegetation types and amounts of vegetation to increments in mean NDVI for different bufffer zones in a univariate model. Univariate models for a buffer distance of 100 meters should be as follows:
 
-<img src="/visualizations_ndvi/gam_greenspace_100_best_plot.png" width="300" height="250"><img src="/visualizations_ndvi/gam_canopy_100_best_plot.png" width="300" height="250">
-<img src="/visualizations_ndvi/gam_shrubs_100_best_plot.png" width="300" height="250"><img src="/visualizations_ndvi/gam_grass_100_best_plot.png" width="300" height="250">
+<img src="/visualizations_ndvi/gam_greenspace_100_best_plot.bmp" width="300" height="250"><img src="/visualizations_ndvi/gam_canopy_100_best_plot.bmp" width="300" height="250">
+<img src="/visualizations_ndvi/gam_shrubs_100_best_plot.bmp" width="300" height="250"><img src="/visualizations_ndvi/gam_grass_100_best_plot.bmp" width="300" height="250">
 
 The results suggest that NDVI is sensitive to vegetation types and amounts of vegetation for different buffer zones and that vegetation densities and types of vegetation are sensitive to increments in mean NDVI (i.e. 0.1 increments) for different buffer zones. Furthermore, these sensitivies usually follow nonlinear patterns. Finally, our results address the mystery behind NDVI for greenness exposure assessment and might be translated into actionable policy interventions in urban greening.
 
