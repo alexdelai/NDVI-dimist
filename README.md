@@ -4,7 +4,7 @@
 Project made in collaboration with S.M. Labib from the Department of Human Geography and Spatial Planning at Utrecht University.
 
 ## Aims and objectives
-A large majority of nature and health research uses the normalized difference vegetation index (NDVI) for measuring greenness exposure. However, little is known about what NDVI measures in terms of vegetation types (e.g., grass, canopy coverage) within certain analysis zones (e.g., 500m buffer). Additionally, more exploration is needed to understand how to interpret changes in NDVI (e.g., per 0.1 increments) for policy intervention in urban greening. This study aims to address such gaps in the literature.
+Most nature and health research use the normalized difference vegetation index (NDVI) for measuring greenness exposure. However, little is known about what NDVI measures in terms of vegetation types (e.g., grass, canopy coverage) within certain analysis zones (e.g., 500m buffer). Additionally, more exploration is needed to understand how to interpret changes in NDVI (e.g., per 0.1 increments) for policy intervention in urban greening. This study aims to address such gaps in the literature.
 
 ## Technology
 - Programming Language: used Python v3.9.10
