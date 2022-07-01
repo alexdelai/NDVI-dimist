@@ -1,10 +1,10 @@
 # Demystifying normalized difference vegetation index (NDVI) for greenness exposure assessments and policy interventions in urban greening
 
 ## Acknowledgements
-Thesis project was made in collaboration with S.M. Labib from the Department of Human Geography and Spatial Planning at Utrecht University.
+Project made in collaboration with S.M. Labib from the Department of Human Geography and Spatial Planning at Utrecht University.
 
 ## Aims and objectives
-A large majority of nature and health research uses the normalized difference vegetation index (NDVI) for measuring greenness exposure. However, little is known about what NDVI measures in terms of vegetation types (e.g., grass, canopy coverage) within certain analysis zones (e.g., 500m buffer). Additionally, more exploration is needed to understand how changes in NDVI (e.g., per 0.1 increments) should be interpreted for policy intervention in urban greening. This study aims to address such gaps in the literature.
+A large majority of nature and health research uses the normalized difference vegetation index (NDVI) for measuring greenness exposure. However, little is known about what NDVI measures in terms of vegetation types (e.g., grass, canopy coverage) within certain analysis zones (e.g., 500m buffer). Additionally, more exploration is needed to understand how to interpret changes in NDVI (e.g., per 0.1 increments) for policy intervention in urban greening. This study aims to address such gaps in the literature.
 
 ## Technology
 - Programming Language: used Python v3.9.10
@@ -33,7 +33,7 @@ Here, we created greenness exposure maps (i.e. output layers) for different buff
 ### 4. Step 4: random location sampling within the study area
 Then, we performed data reduction by randomly sampling locations within the Greater Manchester boudaries for 100, 300, and 500 meters buffer distance ensuring the data representation of the study area.
 ### 5. Step 5: extraction of raster values
-Finally, we sampled greenness exposure maps at the randomly generated locations to extract raster or cell values and stored them into three different dataframes (one per buffer zone). For instance, greenness metrics at 100 meters data frame should be as follows:
+Finally, we sampled greenness exposure maps at the randomly generated locations to extract their raster or cell values into three data frames (one per buffer zone). For instance, greenness metrics at 100 meters data frame should be as follows:
 
 ![](/visualizations_ndvi/df_ndvi_100.png)
 
@@ -52,7 +52,7 @@ Following the methodology, run **3_exploratory_gam_analysis_ndvi.ipynb** to get 
 
 1.1. Introduction to Generalized Additive Models (GAMs)
 
-1.2. Components and parameteres of GAMs (distribution, link function, functional form, lambda, and splines)
+1.2. Components and parameters of GAMs (distribution, link function, functional form, lambda, and splines)
 
 1.3. How to select the best model and tune the model (GCV, Effective DoF, AIC, Pseudo R-Squared, and grid search)?
 
@@ -71,6 +71,6 @@ Finally, run **5_univariate_analysis_ndvi.ipynb** to explore the sensitivity of 
 <img src="/visualizations_ndvi/gam_greenspace_100_best_plot.bmp" width="350" height="250"><img src="/visualizations_ndvi/gam_canopy_100_best_plot.bmp" width="350" height="250">
 <img src="/visualizations_ndvi/gam_shrubs_100_best_plot.bmp" width="350" height="250"><img src="/visualizations_ndvi/gam_grass_100_best_plot.bmp" width="350" height="250">
 
-The results suggest that NDVI is sensitive to vegetation types and amounts of vegetation for different buffer zones and that vegetation densities and types of vegetation are sensitive to increments in mean NDVI (i.e. 0.1 increments) for different buffer zones. Furthermore, these sensitivies usually follow nonlinear patterns. Finally, our results address the mystery behind NDVI for greenness exposure assessment and might be translated into actionable policy interventions in urban greening.
+Our results suggest that NDVI is sensitive to vegetation types and that types and quantities of vegetation are sensitive to increments in mean NDVI (i.e. 0.1 increments) both for different buffer zones. Furthermore, these sensitivities usually follow nonlinear patterns. Overall, the results address the mystery behind NDVI for greenness exposure assessment and might be translated into actionable policy interventions in urban greening.
 
-Thesis project submitted to the Department of Information and Computing Sciences in collaboration with the Department of Human Geography and Spatial Planning in candidacy for the degree of Master of Science in Applied Data Science, Utrecht University.
+We submitted this project to the Department of Information and Computing Sciences in collaboration with the Department of Human Geography and Spatial Planning in candidacy for the Master of Science degree in Applied Data Science, Utrecht University.
